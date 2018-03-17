@@ -1,0 +1,242 @@
+/*
+* Custom variables
+*/
+$main-font: 'Lato', sans-serif;
+$sub-font: 'Montserrat', sans-serif;
+$fancy-font: 'Kaushan Script', cursive;
+$font-size: 16px;
+
+$black: #000;
+$white: #FFF;
+$grey: #585c65;
+$dark-grey: #424242;
+$mediumgrey: #9b9b9b;
+$lightgrey: #fefefe;
+$blue: #3466a1;
+$yellow: #ffc107;
+
+$padding: 10px;
+$margin: 10px;
+
+/*
+* Override Bootstrap variables
+*/
+$font-family-sans-serif: $main-font;
+
+@import 'bootstrap';
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: $lightgrey;
+  color: $grey;
+  font-size: $font-size;
+}
+
+
+header {
+  max-height: 600px;
+  height: 350px;
+  overflow: hidden;
+
+}
+
+.align-right {
+  right:20px;
+}
+
+.absolute-right {
+  position: absolute;
+  width: 100%;
+  text-align: right;
+}
+
+.align-top {
+  position: absolute;
+  top:0px;
+}
+
+.feed-wrap {
+  background: $dark-grey;
+}
+
+.feed-content {
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: $padding*5 0;
+    color: darken($lightgrey, 20%);
+  }
+
+}
+
+.name {
+  font-size: 21px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  color: $white;
+}
+
+.horizontal-center {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+}
+
+.vertical-center {
+  position: absolute;
+  bottom: 5%;
+
+  @media screen and (min-width: $screen-lg) {
+    bottom: 15%;
+  }
+}
+
+.button {
+  background-color: $yellow;
+  color: $white;
+  margin: $margin * 3;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+
+}
+
+.button2 {
+  background-color: transparent;
+  color: $dark-grey;
+  margin: $margin * 3;
+  border: $mediumgrey;
+  border-style: solid;
+  border-width: thin;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 800;
+
+}
+
+.titles {
+  font-size: 72px;
+}
+
+.subtitles {
+  font-size: 48px;
+}
+
+h1, h2 {
+  width: 100%;
+  color: $grey;
+  margin: $margin;
+}
+
+.custom-navbar {
+@extend .navbar;
+  z-index: 10;
+  width: 230px;
+  background-color: transparent;
+  border: transparent;
+  position: absolute;
+  top: 120px;
+}
+
+.custom-nav {
+  @extend .nav;
+  z-index: 10;
+  > li {
+    > a {
+      color: $dark-grey;
+      background-color: transparent;
+
+      &:hover, &:focus {
+        color: $white;
+        background-color: $mediumgrey
+      }
+    }}
+
+
+}
+
+.behaviour-menu {
+  @extend .nav;
+  z-index: 10;
+  top: 100px;
+  > li {
+    > a {
+      width:180px;
+      text-align: center;
+      font-size: large;
+      color: $dark-grey;
+      background-color: $lightgrey;
+
+      &:hover{
+        color: $white;
+        background-color: $yellow;
+      }
+
+      &:focus{
+        color: $white;
+        background-color: $mediumgrey;
+      }
+    }}
+}
+
+.mainblock {
+  background-color: $white;
+  position: absolute;
+  top:120px;
+  left: 50%;
+  z-index: 1;
+  width: 60%;
+  margin-left:-32%;
+}
+
+.plotblock1 {
+  margin-top: 75%;
+
+  > img {
+    width:50%;
+    height:35%;
+    margin: 10px 20px;
+    float:left;
+  }
+
+  > button {
+    width: 250px;
+    position: absolute;
+
+    left:55%;
+  }
+}
+
+.plotblock2 {
+  @extend .plotblock1;
+  margin-top: 120%;
+}
+
+
+.plotblock3 {
+  @extend .plotblock1;
+  margin-top: 165%;
+}
+
+.rateblock {
+  background-color: $lightgrey;
+  position: absolute;
+  top:1450px;
+  width:100%;
+}
