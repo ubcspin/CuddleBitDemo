@@ -62,6 +62,13 @@ module.exports = {
             }
           }
           ]
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /firebase/,
+        use: {
+          loader: "babel-loader"
+        }
       }
     ]
   },

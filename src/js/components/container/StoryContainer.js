@@ -1,20 +1,27 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import Input from "../presentational/Input";
 import '../../../css/bootstrap.min.css';
 import '../../../css/style.css';
+import BehaviorContainer from "./BehaviorContainer.js";
 
-class FormContainer extends Component {
+class StoryContainer extends Component {
   constructor() {
     super();
     this.state = {
       seo_title: ""
     };
     this.handleChange = this.handleChange.bind(this);
+    this.toBehavior   = this.toBehavior.bind(this);
   }
   handleChange(event) {
     this.setState({ [event.target.id]: event.target.value });
   }
+
+  toBehavior() {
+    return (<BehaviorContainer/>)
+  }
+
+
   render() {
     const { seo_title } = this.state;
     return (
@@ -43,8 +50,8 @@ class FormContainer extends Component {
         <div class="container-fluid" >
 
         <ul class="custom-nav nav-pills nav-stacked" role="tablist">
-        <li class="active"><a href="index.html">SHARE YOUR STORY</a></li>
-    <li><a href="behaviour.html">SEE OUR BEHAVIOURS</a></li>
+        <li class="active"><a>SHARE YOUR STORY</a></li>
+    <li><a onClick={this.toBehavior}>SEE OUR BEHAVIOURS</a></li>
     </ul>
     </div>
     </nav>
@@ -58,19 +65,19 @@ class FormContainer extends Component {
 
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
         <div class="photo-box">
-        <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/eV1HgeD4Y1zx7Cv54ihmng/171465335246" data-did="0e8788b36aeb2aa530777706c0f29edfb719fc65"><a href="https://hasumonn.tumblr.com/post/171465335246/pocarisuetto-this-is-a-test-the-author-also">https://hasumonn.tumblr.com/post/171465335246/pocarisuetto-this-is-a-test-the-author-also</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>        <div class="row">
-  </div>
+        {/*<div className="tumblr-post" data-href="https://embed.tumblr.com/embed/post/eV1HgeD4Y1zx7Cv54ihmng/171465335246" data-did="0e8788b36aeb2aa530777706c0f29edfb719fc65"><a href="https://hasumonn.tumblr.com/post/171465335246/pocarisuetto-this-is-a-test-the-author-also">https://hasumonn.tumblr.com/post/171465335246/pocarisuetto-this-is-a-test-the-author-also</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>        <div className="row">*/}
+  {/*</div>*/}
   </div>
 
   </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
       <div class="photo-box">
-        <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/eV1HgeD4Y1zx7Cv54ihmng/171788469906" data-did="96ec1eeaad8da7ab3aacf76eac87c69c5d923773"><a href="https://hasumonn.tumblr.com/post/171788469906/new-story">https://hasumonn.tumblr.com/post/171788469906/new-story</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>
+        {/*<div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/eV1HgeD4Y1zx7Cv54ihmng/171788469906" data-did="96ec1eeaad8da7ab3aacf76eac87c69c5d923773"><a href="https://hasumonn.tumblr.com/post/171788469906/new-story">https://hasumonn.tumblr.com/post/171788469906/new-story</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>*/}
           </div>
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
           <div class="photo-box">
-          <div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/eV1HgeD4Y1zx7Cv54ihmng/171788493566" data-did="86c40cde69febfaf0be72e129a6dae51672f083a"><a href="https://hasumonn.tumblr.com/post/171788493566/longer-story">https://hasumonn.tumblr.com/post/171788493566/longer-story</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>
+          {/*<div class="tumblr-post" data-href="https://embed.tumblr.com/embed/post/eV1HgeD4Y1zx7Cv54ihmng/171788493566" data-did="86c40cde69febfaf0be72e129a6dae51672f083a"><a href="https://hasumonn.tumblr.com/post/171788493566/longer-story">https://hasumonn.tumblr.com/post/171788493566/longer-story</a></div>  <script async src="https://assets.tumblr.com/post.js"></script>*/}
         </div>
       </div>
     </div>
@@ -83,6 +90,6 @@ class FormContainer extends Component {
     );
   }
 }
-export default FormContainer;
+export default StoryContainer;
 const wrapper = document.getElementById("app");
-wrapper ? ReactDOM.render(<FormContainer />, wrapper) : false;
+wrapper ? ReactDOM.render(<StoryContainer />, wrapper) : false;
