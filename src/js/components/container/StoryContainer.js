@@ -91,5 +91,5 @@ class StoryContainer extends Component {
   }
 }
 export default StoryContainer;
-const wrapper = document.getElementById("app");
-wrapper ? ReactDOM.render(<StoryContainer />, wrapper) : false;
+// const wrapper = document.getElementById("app");
+// wrapper ? ReactDOM.render(<StoryContainer />, wrapper) : false;

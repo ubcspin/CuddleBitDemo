@@ -5,7 +5,13 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import '../../../css/bootstrap.min.css';
 import '../../../css/style.css';
-import VTEditor from "../presentational/vteditor.jsx";
+
+// const io = require('socket.io-client');
+// const socket = io.connect("http://localhost:8080");
+//
+// socket.on('init', function() {
+//   socket.emit('start', 'start');
+// });
 
 class BehaviorContainer extends Component {
   constructor(props) {
@@ -13,9 +19,13 @@ class BehaviorContainer extends Component {
 
     this.state = {
       seo_title: "",
+      // socket: socket,
+      behavior: 1,
+      behaviorNum: 20
     };
 
     this.handleChange = this.handleChange.bind(this);
+    this.reload       = this.reload.bind(this);
   }
 
 
@@ -23,13 +33,25 @@ class BehaviorContainer extends Component {
     this.setState({ [event.target.id]: event.target.value });
   }
 
-  render() {
+  reload(b) {
+    console.log("here is the result..." + b);
+    this.setState({behavior: b});
+  }
 
-    const { seo_title } = this.state;
+  render() {
+    const { seo_title, behaviorNum, behavior } = this.state;
+
+    var menu = [];
+    for (var i = 0; i < behaviorNum; i++) {
+
+      menu.push(<li><a href="#" onClick={this.reload.bind(this,i)}>Behaviour {i}</a></li>);
+    }
+
+    menu[behavior] = <li class="active"><a href="#">Behaviour {behavior}</a></li>
 
 
     return (
-        <div id="app">
+        <div id="behaviorContainer">
           <header>
             <div>
               <h1 class="subtitles"> <span>CuddleBit Behaviours</span></h1>
@@ -59,13 +81,7 @@ class BehaviorContainer extends Component {
             <div class="container-fluid" >
 
               <ul class="behaviour-menu nav-pills nav-stacked" role="tablist">
-                <li class="active"><a href="#">Behaviour 1</a></li>
-                <li><a href="#">Behaviour 2</a></li>
-                <li><a href="#">Behaviour 2</a></li>
-                <li><a href="#">Behaviour 2</a></li>
-                <li><a href="#">Behaviour 2</a></li>
-                <li><a href="#">Behaviour 2</a></li>
-                <li><a href="#">Behaviour 2</a></li>
+                {menu}
               </ul>
             </div>
           </nav>
@@ -73,7 +89,7 @@ class BehaviorContainer extends Component {
           <div class="mainblock">
             {/*Macaron Editor*/}
             <div name="main" id="maineditor" ref="mainEditorRef">
-            {/*<VTEditor/>*/}
+
             </div>
 
               <div class="plotblock1">
@@ -118,5 +134,5 @@ class BehaviorContainer extends Component {
   }
 }
 export default BehaviorContainer;
-// const wrapper = document.getElementById("app");
-// wrapper ? ReactDOM.render(<BehaviorContainer />, wrapper) : false;
+const wrapper = document.getElementById("behaviorContainer");
+wrapper ? ReactDOM.render(<BehaviorContainer />, wrapper) : false;

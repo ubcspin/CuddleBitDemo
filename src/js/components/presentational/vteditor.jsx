@@ -19,11 +19,11 @@ var ClipboardStore = require('./../../stores/clipboardstore.js');
 var AnimationStore = require('./../../stores/animationstore.js');
 var StudyStore = require('./../../stores/studystore.js')
 
+var createReactClass = require('create-react-class');
 
 
 
-
-var VTEditor = React.createClass({
+var VTEditor = createReactClass({
 	mixins : [
 				Reflux.connect(PlaybackStore.store, 'playback'), //emitted updates go to 'playback' key
 				Reflux.connect(VTIconStore.store, 'vticons'), //emitted updates go to 'vticon' key
@@ -240,7 +240,7 @@ var VTEditor = React.createClass({
    			case 73: //i
    				if (e.ctrlKey || e.metaKey) {
    					VTIconStore.actions.invertKeyframes();
-   					
+
    				}
    				break;
    			case 191: // forward slash "/"
@@ -389,8 +389,6 @@ var VTEditor = React.createClass({
 								selection={this.state.selection}/>
 						))}
 				</div>
-				{exampleEditor}
-				{exampleGallery}
 			</div>);
 		},
 

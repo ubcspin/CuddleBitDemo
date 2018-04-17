@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "create-react-class": "^15.6.3",
     "react": "^16.2.0",
     "style-loader": "^0.20.3",
     "webpack": "^4.3.0",
