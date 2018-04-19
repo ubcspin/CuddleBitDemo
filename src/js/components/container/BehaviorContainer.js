@@ -6,12 +6,12 @@ import ReactDOM from "react-dom";
 import '../../../css/bootstrap.min.css';
 import '../../../css/style.css';
 
-// const io = require('socket.io-client');
-// const socket = io.connect("http://localhost:8080");
-//
-// socket.on('init', function() {
-//   socket.emit('start', 'start');
-// });
+const io = require('socket.io-client');
+const socket = io.connect("http://localhost:8080");
+
+socket.on('init', function() {
+  socket.emit('start', 'start');
+});
 
 class BehaviorContainer extends Component {
   constructor(props) {
@@ -19,15 +19,15 @@ class BehaviorContainer extends Component {
 
     this.state = {
       seo_title: "",
-      // socket: socket,
+      socket: socket,
       behavior: 1,
       behaviorNum: 20
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.reload       = this.reload.bind(this);
+    this.playBehaviour= this.playBehaviour(this)
   }
-
 
   handleChange(event) {
     this.setState({ [event.target.id]: event.target.value });
@@ -38,17 +38,23 @@ class BehaviorContainer extends Component {
     this.setState({behavior: b});
   }
 
+  playBehaviour() {
+
+    socket.emit("robot", this.state.behavior );
+
+  }
+
   render() {
     const { seo_title, behaviorNum, behavior } = this.state;
 
     var menu = [];
-    for (var i = 0; i < behaviorNum; i++) {
+    for (var i = 1; i <= behaviorNum; i++) {
 
       menu.push(<li><a href="#" onClick={this.reload.bind(this,i)}>Behaviour {i}</a></li>);
     }
 
-    menu[behavior] = <li class="active"><a href="#">Behaviour {behavior}</a></li>
-
+    menu[behavior - 1] = <li class="active"><a href="#">Behaviour {behavior}</a></li>;
+    var waveform = "../bhv/" + behavior + ".png";
 
     return (
         <div id="behaviorContainer">
@@ -86,35 +92,37 @@ class BehaviorContainer extends Component {
             </div>
           </nav>
 
+
           <div class="mainblock">
             {/*Macaron Editor*/}
             <div name="main" id="maineditor" ref="mainEditorRef">
-
+              <img class='horizontal-center' src={waveform}/>
+              {/*<button class="button2" onClick={this.playBehaviour}> Play </button>*/}
             </div>
 
-              <div class="plotblock1">
-                <img src="images/mse.png"/>
-                  <button class="button2">
-                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                    What is MSE?
-                  </button>
-              </div>
+              {/*<div class="plotblock1">*/}
+                {/*<img src="images/mse.png"/>*/}
+                  {/*<button class="button2">*/}
+                    {/*<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>*/}
+                    {/*What is MSE?*/}
+                  {/*</button>*/}
+              {/*</div>*/}
 
-              <div class="plotblock2">
-                <img src="images/mse.png"/>
-                  <button class="button2">
-                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                    What is FFT?
-                  </button>
-              </div>
+              {/*<div class="plotblock2">*/}
+                {/*<img src="images/mse.png"/>*/}
+                  {/*<button class="button2">*/}
+                    {/*<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>*/}
+                    {/*What is FFT?*/}
+                  {/*</button>*/}
+              {/*</div>*/}
 
-              <div class="plotblock3">
-                <img src="images/mse.png"/>
-                  <button class="button2">
-                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                    What is Variance?
-                  </button>
-              </div>
+              {/*<div class="plotblock3">*/}
+                {/*<img src="images/mse.png"/>*/}
+                  {/*<button class="button2">*/}
+                    {/*<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>*/}
+                    {/*What is Variance?*/}
+                  {/*</button>*/}
+              {/*</div>*/}
 
               <div class="rateblock">
                 <h3>What emotions do you think this behaviour is displaying?</h3>

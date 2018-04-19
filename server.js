@@ -13,12 +13,34 @@ var fs = require('fs');
 
 //////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////
+// Logging
+var now = new Date();
 
+var stream = fs.createWriteStream("./logs/logfile" + now.getTime() + '.txt');
+stream.on('error', console.error);
+
+function write(str) {
+  stream.write(str + '\n\n');
+}
+function log(obj) {
+  var now = new Date();
+  var ret = {
+    timestamp: now.getTime(),
+    data: obj
+  }
+  var str = JSON.stringify(ret);
+  write(str);
+}
+// log({this:"is", 'complicated': 'no?', no:"it is", yes: [1,2,3,4]})
+// log({this:"is", 'complicated': 'no?', no:"it is", yes: [1,2,3,4]})
+
+//////////////////////////////////////////////////////////////////////
 //Here we are configuring express to use body-parser as middle-ware.
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-server.listen(8000);
+server.listen(8080);
 
 console.log("Started back end...")
 

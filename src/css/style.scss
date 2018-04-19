@@ -198,11 +198,18 @@ h1, h2 {
 .mainblock {
   background-color: $white;
   position: absolute;
-  top:120px;
+  top: 120px;
   left: 50%;
   z-index: 1;
   width: 60%;
-  margin-left:-32%;
+  margin-left: -32%;
+
+  > button {
+    width: 250px;
+    position: absolute;
+
+    left: 55%;
+  }
 }
 
 .plotblock1 {
