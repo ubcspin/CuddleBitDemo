@@ -21,12 +21,12 @@ class BehaviorContainer extends Component {
       seo_title: "",
       socket: socket,
       behavior: 1,
-      behaviorNum: 20
+      behaviorNum: 18
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.reload       = this.reload.bind(this);
-    this.playBehaviour= this.playBehaviour(this)
+    this.playBehaviour= this.playBehaviour.bind(this);
   }
 
   handleChange(event) {
@@ -41,6 +41,7 @@ class BehaviorContainer extends Component {
   playBehaviour() {
 
     socket.emit("robot", this.state.behavior );
+    console.log("playing behavior");
 
   }
 
@@ -95,18 +96,20 @@ class BehaviorContainer extends Component {
 
           <div class="mainblock">
             {/*Macaron Editor*/}
+
+            <button class="button2" style={{position: 'absolute', right: '0%', top: '18%'}} onClick={this.playBehaviour}> Play </button>
             <div name="main" id="maineditor" ref="mainEditorRef">
               <img class='horizontal-center' src={waveform}/>
-              {/*<button class="button2" onClick={this.playBehaviour}> Play </button>*/}
-            </div>
+              </div>
 
-              {/*<div class="plotblock1">*/}
-                {/*<img src="images/mse.png"/>*/}
-                  {/*<button class="button2">*/}
-                    {/*<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>*/}
-                    {/*What is MSE?*/}
-                  {/*</button>*/}
-              {/*</div>*/}
+
+              <div class="plotblock1">
+                <img src="images/mse.png"/>
+                  <button class="button2">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    What is MSE?
+                  </button>
+              </div>
 
               {/*<div class="plotblock2">*/}
                 {/*<img src="images/mse.png"/>*/}
