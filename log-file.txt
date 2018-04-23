@@ -1,0 +1,256 @@
+
+> reacttemp@1.0.0 start /Users/Lo/Documents/Lo/Developer/CuddleBitDemo
+> node server.js & webpack-dev-server --open
+
+Started back end...
+1524460800303 Board Looking for connected device  
+ℹ ｢wds｣: Project is running at [1m[34mhttp://localhost:8081/[39m[22m
+ℹ ｢wds｣: webpack output is served from [1m[34m/[39m[22m
+ℹ ｢wds｣: Content not from webpack is served from [1m[34m./dist[39m[22m
+You connected. Congrats.
+start
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: Failed to compile.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: Failed to compile.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /index.html
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: wait until bundle finished: /css/style.css
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /css/bootstrap.min.css
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+You connected. Congrats.
+You connected. Congrats.
+start
+start
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /index.html
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: wait until bundle finished: /css/bootstrap.min.css
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /css/style.css
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /index.html
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /index.html
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /css/bootstrap.min.css
+ℹ ｢wdm｣: wait until bundle finished: /css/style.css
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /index.html
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /css/style.css
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /css/bootstrap.min.css
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /index.html
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: wait until bundle finished: /css/style.css
+ℹ ｢wdm｣: wait until bundle finished: /css/bootstrap.min.css
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+You connected. Congrats.
+You connected. Congrats.
+start
+start
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /index.html
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: wait until bundle finished: /css/bootstrap.min.css
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: wait until bundle finished: /css/style.css
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+You connected. Congrats.
+You connected. Congrats.
+start
+start
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /index.html
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: wait until bundle finished: /css/bootstrap.min.css
+ℹ ｢wdm｣: wait until bundle finished: /socket.io.js
+ℹ ｢wdm｣: wait until bundle finished: /css/style.css
+ℹ ｢wdm｣: wait until bundle finished: /js/main.js
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /index.html
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /bhv/5.png
+ℹ ｢wdm｣: wait until bundle finished: /mse/5.png
+ℹ ｢wdm｣: Compiled with warnings.
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: wait until bundle finished: /index.html
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
+ℹ ｢wdm｣: Compiling...
+ℹ ｢wdm｣: wait until bundle finished: /
+ℹ ｢wdm｣: wait until bundle finished: /js/bootstrap.js
+ℹ ｢wdm｣: Compiled with warnings.
+You connected. Congrats.
+start
+You connected. Congrats.
+start
