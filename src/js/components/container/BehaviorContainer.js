@@ -261,22 +261,11 @@ class BehaviorContainer extends Component {
 
     var info = <div/>
     if (this.state.show_info == true) {
-      info =  <div class="popup" style={{position: 'absolute', top:'30%', right:"5%" }}>
-        <p>  For social robots to function well, emotion expression is critical.
-          Even the simple steady state haptic feedback, or simulated breathing,
-          can express enriched emotions. But emotion expression is featured by
-          ambiguity. To model and render a specific emotion on robots,  we
-          explored the possibility of behavior feature engineering.
-
+      info =  <div class="popup" style={{position: 'absolute', top:'30%', right:"5%", height:"850px" }}>
+        <p>  Social robots need to express and understand emotion. Humans ascribe emotion easily to objects: even extremely simple movements can seem emotional. However, the valence (positivity/negativity) of an emotion expression is often ambiguous when taken out of context. In this project, we explored how both the movement complexity and and narrative context impact how the valence of a robot behaviour.
           <br/>
-          We use simple robotic prototypes boasting 1-Degree of Freedom motion capabilities.
-          This affords us both an affective haptic display in the robot's behaviour,
-          as well as a platform for understanding how humans imbue robots with emotion
-          capabilities.
-          <br/>
-          The last attempt we tried was to map emotion valence (positivity/negativity
-          of the emotion) with the level of complexity of the behavior. We found a moderate to small
-          correlation between them. Let’s see if our system works for you.</p>
+          Our robots, called the CuddleBits, are simple, fuzzy, balls of fur that breathe using a single motor. The CuddleBits are designed to explore how humans emotionally interact via the sense of touch. In previous work, we found that they could consistently express high/low activation, but valence was more difficult. This work drills down on valence, exploring the tension between signal complexity and narrative framing.
+        </p>
       </div>
     }
 
@@ -307,7 +296,7 @@ class BehaviorContainer extends Component {
                 Project Information
               </button>
             </div>
-              {info}
+            {info}
 
           </header>
 
